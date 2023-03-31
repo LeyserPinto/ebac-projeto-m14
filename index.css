@@ -1,0 +1,113 @@
+@font-face {
+    font-family: sofiaPro;
+    src: url(./src/font/sofiapro-light.otf);
+}
+:root{
+    --bg-primary: #0e0c1d;
+    --primaryColor: #BABAFF;
+    --secondaryColor: #e3e3ff;
+    --primary-font: sofiaPro;
+}
+body{
+    background-color: var(--bg-primary);
+    font-family: var(--primary-font), Arial, Helvetica, sans-serif !important;
+}
+header{
+    z-index: 1 !important;
+    background-color: var(--bg-primary) !important;
+}
+nav ul li a{
+    color: var(--primaryColor) !important;
+}
+.primaryColor{
+    color: var(--primaryColor);
+}
+.secondaryColor{
+    color: var(--secondaryColor);
+}
+.btn-cpy{    
+    background: rgb(101,25,194);
+    background: linear-gradient(0deg, rgba(101,25,194,1) 0%, rgba(134,27,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(101,25,194,1) 0%, rgba(134,27,255,1) 100%); 
+    color: white;    
+    transition: all ease-in-out .2s;
+}
+.btn-cpy:hover{
+    transform: scale(1.05);
+    background: rgb(135, 57, 230);
+    background: linear-gradient(0deg, rgb(135, 57, 230) 0%, rgb(137, 55, 231) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(135, 57, 230) 0%, rgb(137, 55, 231) 100%); 
+    color: #BABAFF;
+}
+#herobg{
+    filter: blur(2px);
+}
+#heroTextos{
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    
+}
+
+#heroTextos h1{
+    
+    color: var(--primaryColor) !important;
+    filter: drop-shadow(0px 1px #7d9be8) drop-shadow(0px -4px 16px rgb(171 84 244 / 72%)) drop-shadow(0px 2px 1px rgb(0 0 0 / 44%));
+}
+#heroTextos h2{
+    color: var(--primaryColor) !important;
+    filter: drop-shadow(0px 1px #7d9be8) drop-shadow(0px -4px 16px rgb(171 84 244 / 72%)) drop-shadow(0px 2px 1px rgb(0 0 0 / 44%));
+}
+
+#modos-do-jogo{
+    background-image: url('https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Fbg-games.webp&w=1920&q=75');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#discover{
+    background-image: url('https://illuvium.io/images/homepage/bg-illuvitar.webp');
+    background-size: cover;
+}
+
+.card{
+    background: rgb(101,25,194);
+    background: linear-gradient(top, rgba(38, 19, 118, 0.5) 0%, rgba(4, 0, 41, 0.9) 100%); 
+    background: -webkit-linear-gradient(top, rgba(38, 19, 118, 0.5) 0%, rgba(4, 0, 41, 0.9) 100%); 
+    backdrop-filter: blur(2px);
+    min-height: 569px !important;
+
+}
+.light-border{
+    border: #BABAFF thin solid;
+}
+.filter-drop{
+    filter: drop-shadow(0px 1px #7d9be8) drop-shadow(0px -4px 16px rgb(171 84 244 / 72%)) drop-shadow(0px 2px 1px rgb(0 0 0 / 44%));
+}
+
+.download-link{
+    text-decoration: none;
+    gap: 10px;
+}
+.right-img{
+    left: 60% !important;
+}
+.left-img{
+    right: 43% !important;
+}
+
+@media screen and (max-width:768px) {
+    #sobre{
+        width: 100%;
+        align-items: center;
+    }
+    #youtube-gameplay{
+        height: 500px !important;
+    }
+
+    #playnow{
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Projeto 3: Modulo 14</title>
+</head>
+
+<body>
+    <!--Header Setion-->
+    <header class="sticky-top top-0 p-3">
+        <div class="container navbar navbar-expand-lg">
+            <h1 class="nav-branch">
+                <img src="https://web-illuvium-static.s3.us-east-2.amazonaws.com/img/illuvium.svg" alt="" width="150px">
+            </h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#herobg">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre o Jogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modos-do-jogo">Modos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discover">Descobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#playnow">Cadastro!</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="header">
+        <!--hero Section-->
+        <div class="position-relative top-0 overflow-hidden">
+            <div class="container-fluid p-0" id="herobg">
+                <img class="w-100"
+                    src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Fcollect-them-all.webp&w=1920&q=75"
+                    alt="illuvium bg">
+            </div>
+            <div id="heroTextos"
+                class="position-absolute w-100 d-flex justify-content-center flex-column align-items-center">
+                <h1 class="fw-bolder h1">Junte-se à luta pela ETH</h1>
+                <h2 class="fw-medium fs-5">Bem-vindo ao mundo de Illuvium</h2>
+                <button class="btn btn-cpy mt-3">Obtenha seu código beta agora!</button>
+            </div>
+        </div>
+        <!--Sobre o Jogo-->
+        <div class="container-fluid p-3">
+            <div class="row p-4 w-100" style="min-height: 70vh;">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column" id="sobre">
+                    <img src="https://web-illuvium-static.s3.us-east-2.amazonaws.com/img/illuvium.svg"
+                        alt="logo Illuvium" width="200px">
+                    <p class="mt-5 text-light fw-semibold lh-base">Um estúdio descentralizado construindo o primeiro
+                        universo Interoperable Blockchain Game (IBG) do mundo, incluindo um jogo de exploração de mundo
+                        aberto, construtor de cidades industriais e autobattler, tudo no blockchain Ethereum.</p>
+                    <p class="mt-2 text-light fw-semibold lh-base">Junte-se a uma aventura de ficção científica rica em
+                        gráficos, explore 7 paisagens alienígenas deslumbrantes e conquiste o deserto para descobrir os
+                        eventos cataclísmicos que destroçaram Illuvium e ajude sua tripulação a aterrissar!</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-9 p-2">
+                    <iframe class="h-100 w-100" id="youtube-gameplay"
+                        src="https://www.youtube.com/embed/mzT88eN4gts?start=6" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!--Modos de Jogo-->
+        <div class="container-fluid p-4 w-100 overflow-hidden" id="modos-do-jogo" style="min-height: 100vh;">
+            <div class="row">
+                <!--Card 1-->
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
+                    <div class="card light-border overflow-hidden">
+                        <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Flogo-overworld.webp&w=2048&q=75"
+                            class="card-img-top " alt="overworld Mode" style="width: 70%; margin: 0 auto; ">
+                        <div class="card-body">
+                            <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Fthumb-overworld.webp&w=1200&q=75"
+                                alt="" class="rounded filter-drop light-border w-100">
+                            <p class="card-text text-center fw-bold mt-3 fs-6 secondaryColor">Busque Illuvials, minere
+                                recursos, pegue plantas exóticas e ajude sua tripulação a prosperar enquanto descobre os
+                                eventos cataclísmicos que levam à destruição deste planeta.</p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center fw-bold mt-3 fs-6 primaryColor">Modo private Beta</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center gap-3">
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-apple"></i>
+                                            <span class="fs-6">Mac</span>
+                                        </a>
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-windows"></i>
+                                            <span class="fs-6">Windows</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
+                    <div class="card light-border overflow-hidden">
+                        <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Flogo-arena.webp&w=1200&q=75"
+                            class="card-img-top " alt="overworld Mode" style="width: 45%; margin: 0 auto; ">
+                        <div class="card-body">
+                            <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Fthumb-arena.webp&w=1200&q=75"
+                                alt="" class="rounded filter-drop light-border w-100">
+                            <p class="card-text text-center fw-bold mt-3 fs-6 secondaryColor">Organize sua melhor equipe,
+                                desafie os oponentes e seja mais esperto que a concorrência em um jogo de alto risco e de cair o queixo
+                                Caos de batalha automática.</p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center fw-bold mt-3 fs-6 primaryColor">Modo privado Beta</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center gap-3">
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-apple"></i>
+                                            <span class="fs-6">Mac</span>
+                                        </a>
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-windows"></i>
+                                            <span class="fs-6">Windows</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
+                    <div class="card light-border overflow-hidden">
+                        <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Flogo-zero.webp&w=1200&q=75"
+                            class="card-img-top " alt="overworld Mode" style="width: 40%; margin: 0 auto; ">
+                        <div class="card-body">
+                            <img src="https://illuvium.io/_next/image?url=%2Fimages%2Fhomepage%2Fthumb-zero.webp&w=1200&q=75"
+                                alt="Modo Zero" class="rounded filter-drop light-border w-100">
+                            <p class="card-text text-center fw-bold mt-3 fs-6 secondaryColor">Crie, atualize e gerencie
+                                seu complexo industrial digital. Encontre biodados, crie projetos e extraia dados escassos
+                                recursos necessários para outros jogadores.</p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center fw-bold mt-3 fs-6 primaryColor">Modo privado Alpha</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center gap-3">
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-apple"></i>
+                                            <span class="fs-6">Mac</span>
+                                        </a>
+                                        <a href="https://play.illuvium.io/?beta=true"
+                                            class="download-link primaryColor">
+                                            <i class="bi bi-windows"></i>
+                                            <span class="fs-6">Windows</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Discover-->
+        <div class="container-fluid w-100 overflow-hidden" id="discover" style="min-height: 100vh;">
+            <div class="row p-5 mx-auto w-100 mt-5">
+                <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+                    <img src="https://illuvium.io/_next/image?url=%2Fimages%2Filluvitars%2Filluvium-beyond-logo.webp&w=640&q=75"
+                        alt="beyond" style="height: 50%;">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+                    <img src="https://illuvium.io/_next/image?url=%2Fimages%2Filluvitars%2Fholo-2.webp&w=384&q=75"
+                        alt="GX-Illuvium" style="width: 250px;">
+                </div>
+            </div>
+            <div class="row p-5 mx-auto w-100">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="https://illuvium.io/_next/image?url=%2Fimages%2Filluvitars%2Falbum.webp&w=1920&q=75"
+                        alt="Beyond Discover Rewards" style="width: 80%;">
+                </div>
+            </div>
+
+        </div>
+        <!--Forms-->
+        <div class="container-fluid d-flex flex-row" id="playnow">
+            <form class="row-6 mt-4 p-3 text-light" style="max-width: 450px;">
+                <!--Usuario-->
+                <div class="col-12 mb-3">
+                    <label for="username" class="form-label">Nome do usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                </div>               
+                <!--Senha-->
+                <div class="col-12 mb-3">
+                    <label for="Senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="Senha" placeholder="Senha" required>
+                </div>
+                 <!--Email-->
+                 <div class="col-12 mb-3">
+                    <label for="email" class="form-label">Endereço Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <!--Check-->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="CheckDados" required>
+                        <label class="form-check-label" for="CheckDados">
+                            Deseja Receber Informações do jogo, assim como Atualizações
+                        </label>
+                    </div>
+                </div>
+                <!--Check-->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="CheckTermos" required>
+                        <label class="form-check-label fs-6 fw-light" for="CheckTermos" >
+                            Eu li os Termos de Condições e Contrato da Illuvium
+                        </label>
+                    </div>
+                </div>
+                <!--Cadastrar Conta-->
+                <div class="col-12 d-grid mt-4">
+                    <button type="submit" class="btn grid btn-primary">Cadastrar-se</button>
+                </div>
+            </form>
+            <div class="row-8 d-flex justify-content-center w-100">
+                <img src="https://web-illuvium-static.s3.us-east-2.amazonaws.com/img/illuvium.svg" alt="logo Illuvium" width="400px">
+            </div>
+        </div>
+    </main>
+    <!--Script SRCS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src=""></script>
+</body>
+
+</html>
